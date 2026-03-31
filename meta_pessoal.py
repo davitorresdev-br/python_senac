@@ -9,7 +9,7 @@ valor_disponivel_meta = salario_pos_despesas - reserva_fixa
 
 meses = valor_metas / valor_disponivel_meta
 
-print(f'Meta: {metas} (R${valor_metas})\nSalario: R${salario} - Despesas: R${despesas}\n\n')
+print(f'Meta: {metas} (R${valor_metas:.2f})\nSalario: R${salario:.2f} - Despesas: R${despesas:.2f}\n\n')
       
 print(f"Saldo apos despesas: R${salario_pos_despesas:.2f}\nReserva fixa(30%): R${reserva_fixa:.2f}\nValor disponivel para a meta: R$ {valor_disponivel_meta:.2f} por mês \nPrazo estimado para atingir a meta: {meses:.2f} meses")
 
