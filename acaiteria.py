@@ -16,4 +16,4 @@ desconto = cupom_desconto / 100
 desconto_aplicado = valor_compra * desconto
 compra_aplicada = valor_compra - desconto_aplicado
 
-print(f'\n\nSeu pedido foi registrado. \n-Açaí P: {qnt_acai_p} \n-Açaí M: {qnt_acai_m} \n-Açaí G: {qnt_acai_g} \n\nDesconto de {cupom_desconto}% aplicado. \nTotal R${compra_aplicada}')
+print(f'\n\nSeu pedido foi registrado. \n-Açaí P: {qnt_acai_p} \n-Açaí M: {qnt_acai_m} \n-Açaí G: {qnt_acai_g} \n\nDesconto de {cupom_desconto}% aplicado. \nTotal R${compra_aplicada:.2f}')
