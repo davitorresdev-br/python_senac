@@ -5,4 +5,4 @@ if semaforo == "verde":
 elif semaforo == "vermelho":
     print("Espere")
 else:
-    print("Cor inválida. Informe 'verde' ou 'vermelho'.")
+    print("Farol inoperante")
