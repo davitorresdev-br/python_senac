@@ -3,18 +3,15 @@ menor_temp = 100
 teve_temperatura_valida = False
 
 while True:
-    try:
-        temp = float(input("Digite a temperatura (ou 0 para encerrar): "))
-    except ValueError:
-        print("Entrada inválida. Por favor, digite um número.")
-        continue
+    temp = float(input("Digite uma temperatura (0 para sair): "))
+
     if temp == 0:
         break
 
     if temp < -50 or temp > 60:
-        print("Temperatura inválida.")
+        print("Temperatura inválida")
         continue
-    
+
     teve_temperatura_valida = True
 
     if temp > maior_temp:
@@ -24,7 +21,5 @@ while True:
         menor_temp = temp
 
 if teve_temperatura_valida:
-    print(f"\nMaior temperatura registrada: {maior_temp}°C")
-    print(f"Menor temperatura registrada: {menor_temp}°C")
-else:
-    print("Nenhuma temperatura válida foi registrada.")
+    print(f"Maior temperatura: {maior_temp:.1f}")
+    print(f"Menor temperatura: {menor_temp:.1f}")
